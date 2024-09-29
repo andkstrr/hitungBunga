@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Bunga</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth; 
+    }
+    
+    .hero {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+      text-align: center;
+    }
+    
+    .about-section {
+      padding: 50px 0;
+    }
+    
+    .btn-primary:hover {
+      background-color: #5a5a5a;
+    }
+
+    .container {
+      max-width: 1200px;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <section class="hero">
+    <div class="container">
+      <h1 class="font-weight-bold mb-2" data-aos="zoom-in-up" data-aos-duration="2500">Selamat Datang di Kalkulator Bunga</h1>
+      <p data-aos="fade-up" data-aos-duration="3000">Hitung bunga pinjaman Anda dengan mudah, menggunakan metode Bunga Majemuk dan Bunga Tunggal.</p>
+      <a href="#proses" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">Mulai Menghitung</a>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 data-aos="fade-up" data-aos-duration="2500" data-aos-delay="2000">Pengertian</h2>
+          <p data-aos="fade-up" data-aos-duration="2500" data-aos-delay="2500">Kalkulator Bunga ini adalah aplikasi web yang dirancang untuk membantu Anda menghitung bunga pinjaman dengan dua metode: bunga majemuk dan bunga tunggal. Bunga majemuk menghitung bunga berdasarkan pokok yang terus bertambah, sedangkan bunga tunggal hanya menghitung berdasarkan pokok awal pinjaman.</p>
+        </div>
+        <div class="col-md-6">
+          <h2 data-aos="fade-up" data-aos-duration="2500" data-aos-delay="2800">Tujuan</h2>
+          <p data-aos="fade-up" data-aos-duration="2500" data-aos-delay="3000">Website ini dikembangkan untuk memberikan kemudahan dalam menghitung bunga pinjaman dengan cara yang praktis dan mudah dipahami. Dengan menggunakan kalkulator ini, Anda bisa menentukan pilihan perhitungan bunga yang paling sesuai dengan kebutuhan Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <main class="container py-5 flex-grow-1">
+    <div class="text-center mb-5">
+      <h2 class="text-center" id="proses" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="3000">Pilih Jenis Perhitungan Bunga</h2>
+      <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="3000">Pilih salah satu jenis perhitungan</p>
+    </div>
+    
+    <div class="row justify-content-center text-center">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm mb-4" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2700">
+          <div class="card-body">
+            <h3 class="card-title">Bunga Majemuk</h3>
+            <p class="card-text text-left">Bunga majemuk adalah bunga yang dihitung berdasarkan jumlah pokok yang sudah ditambahkan dengan bunga dari periode sebelumnya.</p>
+            <a href="bunga_majemuk.html" class="btn btn-primary btn-block">Pilih Bunga Majemuk</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm mb-4" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="3000">
+          <div class="card-body">
+            <h3 class="card-title">Bunga Tunggal</h3>
+            <p class="card-text text-right">Bunga tunggal adalah bunga yang dihitung berdasarkan jumlah pokok awal pinjaman, tanpa memperhitungkan bunga yang sudah terbentuk sebelumnya.</p>
+            <a href="bunga_tunggal.html" class="btn btn-primary btn-block">Pilih Bunga Tunggal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="about-section">
+      <div class="container text-center mb-5">
+        <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="3000">Dikembangkan Oleh</h3>
+        <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="3000">Andika Satrio Nurcahyo - Siswa PPLG, SMK Wikrama</p>
+        <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="3000">Website ini merupakan asesmen matematika yang diberikan oleh Ibu Siti Mariyam, S. Mat.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
